@@ -1,11 +1,13 @@
 # Interface Shiny para Simulação e Recuperação de Curvas com Splines
 
 Este projeto implementa em Shiny e R, um simulador e modelador funcional para curvas agregadas geradas a partir de concentrações aleatórias e curvas constituintes predefinidas (nesse caso, das funções Logito e Spahet).
+
 ---
 ## Motivação
 
 Baseado no modelo de dados funcionais linear (especificamente a Lei de Beer-Lambert) com expansão em bases B-splines, o objetivo é estimar curvas constituintes (e.g, curvas de absorbância ou transmitância) a partir de curvas agregadas simuladas com ruído, controlável e seguindo uma combinação linear entre as curvas componentes e um erro aleatório.
 O artigo "Análise Não-Paramétrica de Dados Funcionais: Uma Aplicação à Quimiometria" de Marley Apolinario Saraiva (2009) serviu de base e inspiração para esse projeto.
+
 ---
 ##  Funcionalidades
 
@@ -18,7 +20,8 @@ O artigo "Análise Não-Paramétrica de Dados Funcionais: Uma Aplicação à Qui
 ---
 ## Exemplo de estimação
 Um exemplo de recuperação das curvas abaixo:
-![Estimativas](exmeplo.png)
+![Exemplo](exemplo.png)
+
 ---
 ## Metodologia
 Baseado no modelo matricial:
@@ -30,6 +33,7 @@ gerado a partir da equação:
 x_i(t) = \sum_{l=1}^{L} \left[ \theta_{0l} + \sum_{j=1}^{m} \theta_{jl} y_{ij} \right] B_l(t) + \varepsilon_i(t)
 \]
 em que a curva agregada é uma expansão em bases spline (das curvas constituintes) ponderadas por concentrações aleatórias.
+
 ---
 ## Tecnologias
 - Linguagem R
