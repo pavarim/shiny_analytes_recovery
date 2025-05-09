@@ -22,19 +22,6 @@ O artigo "Análise Não-Paramétrica de Dados Funcionais: Uma Aplicação à Qui
 Um exemplo de recuperação das curvas abaixo:
 ![Exemplo](exemplo.png)
 
----
-## Metodologia
-Baseado no modelo matricial:
-\[
-X(t) = D(t)\Theta + \varepsilon(t)
-\]
-gerado a partir da equação:
-\[
-x_i(t) = \sum_{l=1}^{L} \left[ \theta_{0l} + \sum_{j=1}^{m} \theta_{jl} y_{ij} \right] B_l(t) + \varepsilon_i(t)
-\]
-em que a curva agregada é uma expansão em bases spline (das curvas constituintes) ponderadas por concentrações aleatórias.
-
----
 ## Tecnologias
 - Linguagem R
 - ShinyApp
