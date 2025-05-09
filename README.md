@@ -17,6 +17,7 @@ O artigo "Análise Não-Paramétrica de Dados Funcionais: Uma Aplicação à Qui
 - Simulação de curvas agregas (controlando quantidade, tamanho da curva e ruído)
 - Visualização dos erros de estimação (EQM) nas recuperações
 - Interação gráfica do usuário via Shiny
+- Botão para download das estimações
 ---
 ## Exemplo de estimação
 Um exemplo de recuperação das curvas abaixo:
